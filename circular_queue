@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+# define INT_MAX 123456789
 class circular_queue
 {
 
