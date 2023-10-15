@@ -61,13 +61,21 @@ public:
             num_items--;
             int d= queuearray[front];
             front++;
-            return d;
-    
-        
-        
+            if(front>rear+1)
+            {
+                front=rear=-1;
+                cout<<"QUEUE is empty\n";
+                return INT_MAX;
+            }
+            return d;   
     }
     void print()        //prints queue
     {
+        if(front==-1 && rear==-1)
+        {
+            cout<<"QUEUE IS EMPTY\n";
+            return;
+        }
         for(int i=front ;i<=rear;i++)
         {
             cout<<queuearray[i]<<" ";  
