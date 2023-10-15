@@ -45,7 +45,7 @@ public:
             queuearray= new int[num_items];
             for(int i=front;i<=rear;i++)
             {
-                queuearray[i]=ab[i];
+                queuearray[i]=ab[i];;
             }
             delete [] ab;
         }
