@@ -1,0 +1,7 @@
+1- create two queues q1 and q1
+when adding an item insert in q2 and then pop elements of q1 and push into q2 till q1 is not empty 
+then create a new queue structur assign it q=q1 
+q1=q2
+q2=q
+
+pop is same as before
